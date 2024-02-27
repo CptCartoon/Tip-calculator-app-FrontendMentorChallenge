@@ -167,8 +167,8 @@ button.tip-button:hover {
 }
 
 .buttonActive {
-  color: var(--VeryDarkCyan);
-  background-color: var(--StrongCyan);
+  color: var(--VeryDarkCyan) !important;
+  background-color: var(--StrongCyan) !important;
 }
 
 input.tip-input {
