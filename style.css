@@ -67,7 +67,7 @@ main {
 
 .tip-wrapper {
   background-color: var(--White);
-  border-radius: 30px;
+  border-radius: 25px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -76,7 +76,7 @@ main {
 }
 
 .logo {
-  margin-bottom: 3rem;
+  margin-bottom: 6rem;
 }
 
 .tip-body_calculator h4 {
@@ -101,7 +101,7 @@ input.input {
   font-family: "Space Mono", monospace;
   font-weight: 700;
   font-size: 1.5rem;
-  border-radius: 3px;
+  border-radius: 5px;
   border: unset;
   color: var(--VeryDarkCyan);
   max-width: 100%;
@@ -173,6 +173,7 @@ button.tip-button:hover {
 
 input.tip-input {
   width: 100%;
+  text-align: center;
 }
 
 .tip-body_result {
@@ -228,15 +229,18 @@ button.reset-button:hover {
   .tip-wrapper {
     flex-direction: row;
     flex-basis: auto;
-    padding: 2rem 2.5rem;
+    padding: 2rem 2rem 2rem 3rem;
   }
 
   .tip-body_calculator {
+    padding-top: 1rem;
     margin-right: 3rem;
   }
 
   .select-tip_wrapper {
     grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 0.75rem;
+    grid-row-gap: 1rem;
   }
 
   input.bill-input,
@@ -257,11 +261,14 @@ button.reset-button:hover {
   }
 
   button.tip-button {
-    width: 120px;
+    width: 117px;
+    padding: 0.4rem 0;
   }
 
   input.tip-input {
-    width: 120px !important;
+    width: 117px !important;
+    padding: 0.4rem 0.4rem;
+    text-align: center;
   }
 
   .bill-section,
