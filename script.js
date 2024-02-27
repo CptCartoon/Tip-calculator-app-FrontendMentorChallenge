@@ -31,7 +31,7 @@ const calculateTip = () => {
         }
         const tip = (tipInput.value/100 * billInput.value)/personInput.value;
         tipAmount.textContent = "$" + tip.toFixed(2);
-        totalAmount.textContent = "$" + (tip.toFixed(2) * personInput.value).toFixed(2);
+        totalAmount.textContent = "$" +(tip + billInput.value / personInput.value).toFixed(2);
     }
     else if(flag===false && billInput.value !== "" && personInput.value !== "") {
         if(personInput.value<1) {
@@ -40,7 +40,7 @@ const calculateTip = () => {
         const percentage = document.querySelector('.buttonActive').getAttribute('data-percentage')
         const tip = (percentage/100 * billInput.value)/personInput.value;
         tipAmount.textContent = "$" + tip.toFixed(2);
-        totalAmount.textContent = "$" + (tip.toFixed(2) * personInput.value).toFixed(2);
+        totalAmount.textContent = "$" +(tip + billInput.value / personInput.value).toFixed(2);
     } 
 }
 
